@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ChatBotTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                chatPage(modifier = Modifier.systemBarsPadding().padding(innerPadding), chatViewModel)
+                chatPage(modifier = Modifier.padding(innerPadding), chatViewModel)
                 }
             }
         }

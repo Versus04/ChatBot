@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.chatbot"
-        minSdk = 24
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -50,7 +50,8 @@ android {
 }
 
 dependencies {
-
+    implementation("org.commonmark:commonmark:0.21.0")
+    implementation("org.jsoup:jsoup:1.16.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
