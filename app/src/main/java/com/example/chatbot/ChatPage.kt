@@ -105,7 +105,7 @@ fun chat(message: message){
                 .clip(RoundedCornerShape(48f))
                 .background(
                     color = if (isModel) {
-                        MaterialTheme.colorScheme.onBackground
+                        MaterialTheme.colorScheme.secondaryContainer
                     } else MaterialTheme.colorScheme.tertiary
                 )
                 .padding(16.dp)) {
